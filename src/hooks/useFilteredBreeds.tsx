@@ -13,10 +13,6 @@ export const useFilteredBreeds = (breeds: RandomBreeds) => {
     setQuery(target.value);
   };
 
-  const onFocusRemove = () => {
-    setFocusValue(false);
-  };
-
   const toggle = () => {
     setFocusValue((value) => !value);
   };
@@ -40,7 +36,6 @@ export const useFilteredBreeds = (breeds: RandomBreeds) => {
     onHandleChange,
     focusValue,
     toggle,
-    onFocusRemove,
     setQuery,
     onKeyPress,
   };

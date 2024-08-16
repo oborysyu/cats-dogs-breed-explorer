@@ -16,8 +16,6 @@ export const BreedsContainer: React.FC<Props> = ({ breeds }) => {
     query,
     onHandleChange,
     toggle,
-    focusValue,
-    onFocusRemove,
     onKeyPress,
   } = useFilteredBreeds(breeds);
 
@@ -27,9 +25,6 @@ export const BreedsContainer: React.FC<Props> = ({ breeds }) => {
         onHandleFocus={toggle}
         value={query}
         onChange={onHandleChange}
-        filteredBreeds={filteredBreeds}
-        focusValue={focusValue}
-        focusRemove={onFocusRemove}
         onKeyPress={onKeyPress}
       />
       <BreedList breeds={filteredBreeds} />

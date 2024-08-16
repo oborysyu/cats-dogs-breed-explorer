@@ -11,7 +11,7 @@ type Props = Omit<Breed, 'id'>;
 export const BreedCard: FC<Props> = memo(function BreedCard({ name, imageUrl, breedId, petType }) {
   const searchParams = useSearchParams();
   const setSearchParams = () => {
-    const params = new URLSearchParams(searchParams.toString());
+    const params = new URLSearchParams(searchParams?.toString());
     params.set('type', petType);
 
     return params.toString();

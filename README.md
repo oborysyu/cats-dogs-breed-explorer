@@ -15,7 +15,12 @@ CATS_API_KEY="your_api_key"
 
 Next, you could open the application in the browser.
 
+**To run tests** you need to launch this command:  
+**npm run test** 
+
 **Application** 
 This application accesses a remote API to obtain data on dog and cat breeds (by default, there are 10 dog breeds and 10 cat breeds on the page). Clicking on a pet breed card opens a separate tab in the browser with detailed information about this breed. A field for searching for a breed from the loaded list on the page has been added to the main page.
+
+Tests have been added to the project (using vitest), which check the basic functionality of application components.
 
 Live demo - https://cats-dogs-breed-explorer.vercel.app/

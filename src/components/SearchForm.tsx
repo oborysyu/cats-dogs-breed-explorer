@@ -1,13 +1,9 @@
-import { Breed } from '@/types/types';
-import React, { RefObject } from 'react';
+import React from 'react';
 
 type Props = {
   value: string;
-  filteredBreeds: Breed[];
   onChange: (value: React.ChangeEvent<HTMLInputElement>) => void;
   onHandleFocus: () => void;
-  focusValue: boolean;
-  focusRemove: () => void;
   onKeyPress: () => void;
 };
 
