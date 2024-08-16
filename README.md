@@ -4,9 +4,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 **To run project locally** you need to launch these commands (after cloning this repository): 
 1. **add .env file** in the root of project; you need to add these variables in this file:
-DOGS_API_URL="https://api.thedogapi.com/v1/"\
-CATS_API_URL="https://api.thecatapi.com/v1/"\
-DOGS_API_KEY="your_api_key"\
+DOGS_API_URL="https://api.thedogapi.com/v1/" \
+CATS_API_URL="https://api.thecatapi.com/v1/" \
+DOGS_API_KEY="your_api_key" \
 CATS_API_KEY="your_api_key"
 
 2. **npm ci** 
